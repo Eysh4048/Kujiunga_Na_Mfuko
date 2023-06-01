@@ -1,0 +1,231 @@
+/* poppins & roboto */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import "~bootstrap-icons/fonts/bootstrap-icons.css";
+/* bootstrap icon online url */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css');
+@font-face {
+    font-family: 'bootstrap-icons';
+    src: url('~bootstrap-icons/fonts/bootstrap-icons.woff2') format('woff2'),
+        url('~bootstrap-icons/fonts/bootstrap-icons.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { margin: 0; box-sizing: border-box; }
+html, body { height: 100vh; }
+
+body {
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+@import "~/bootstrap-icons/fonts/bootstrap-icons.css";
+
+:root {
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin: 0 auto;
+    width: 100px;
+    height: auto;
+}
+
+.logo img {
+    object-fit: cover;
+    width: 100%;
+}
+
+#mat-hd2,
+#mat-hd {
+    width: fit-content;
+}
+
+nav.nav#nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+    gap: 1em;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-container {
+    background-color: #39f;
+}
+
+.nav#nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.3em;
+}
+
+.nav#nav ul > li {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav#nav ul > li > a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+header h1 {
+    font-weight: 500;
+}
+
+main.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em 1em;
+}
+
+.container {
+    max-width: 800px;
+    margin: 1em auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  table {
+    width: 100%;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333333;
+  }
+  
+  h1,h2 {
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  footer.copy div.copy-text {
+    text-align: center;
+    background-color: #333;
+    color: #CCC;
+  }
+
+
+/* footer section */
+
+footer.footer {
+    padding: 2em 1em;
+    /* background-color: #009541; */
+    background-color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+footer .ft-column {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 1em;
+    color: #FFF;
+    padding: 1em;
+    width: 270px;
+}
+
+.ft-social,
+.ft-social span {
+    display: flex;
+    gap: 1em;
+}
+
+.ft-social span i {
+    color: #000;
+    background-color: #FFF;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.ft-social span i:hover {
+    background-color: #39f;
+    color: #FFF;
+}
+
+.ft-header::after {
+    display: block;
+    content: '';
+    width: 100%;
+    border-bottom: 1px solid #CCC;
+    margin: .38em 0;
+}
+
+.ft-list-items {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6rem;
+}
+
+h1:after, h2:after, h3:after, h4:after, h5:after, h6:after {
+    display: block;
+    content: '';
+    width: 100%;
+    border-bottom: 1px solid #CCC;
+    margin: .38em 0;
+}
+
+.ft-list-items > ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+    gap: .76em;
+}
+
+.ft-list-items > ul > li {
+    width: 100%;
+}
+
+.ft-list-items > ul > li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.ft-list-items > ul > li a:hover {
+    color: #009541;
+}
+
+/* scroll item */
+.scroll-item {
+    position: fixed;
+    height: .5rem;
+    inset: 0 0 auto;
+    background-color: #39f;
+    transform-origin: left;
+}
+
+div.eysh :is(img:nth-child(1)) {
+    filter: blur(3px);
+}
